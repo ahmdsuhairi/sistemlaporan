@@ -1,0 +1,21 @@
+# Konfigurasi persekitaran peribadi & kata laluan Oracle
+config.local.php
+
+# Folder cache & sesi sementara
+cache/
+cache/*
+!cache/.gitkeep
+!cache/sessions/.gitkeep
+!cache/tables/.gitkeep
+
+# Fail log & proses sementara
+*.log
+*.tmp
+*.lock
+
+# Fail sistem operasi & IDE
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

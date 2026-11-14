@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 85" width="360" height="85">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#dbeafe" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="domeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="towerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky Backing -->
+  <rect x="0" y="0" width="360" height="85" fill="url(#skyGrad)"/>
+
+  <!-- Clouds -->
+  <ellipse cx="60" cy="22" rx="35" ry="12" fill="#ffffff" opacity="0.65"/>
+  <ellipse cx="190" cy="18" rx="42" ry="14" fill="#ffffff" opacity="0.55"/>
+  <ellipse cx="300" cy="25" rx="30" ry="10" fill="#ffffff" opacity="0.6"/>
+
+  <!-- Left: Masjid Zahir (Alor Setar Royal Mosque) -->
+  <g id="masjid-zahir" transform="translate(10, 8)">
+    <!-- Base building -->
+    <rect x="5" y="45" width="115" height="32" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <!-- Moorish Arches -->
+    <path d="M 15,77 L 15,62 Q 22,54 29,62 L 29,77 Z" fill="#e2e8f0"/>
+    <path d="M 35,77 L 35,62 Q 42,54 49,62 L 49,77 Z" fill="#e2e8f0"/>
+    <path d="M 55,77 L 55,59 Q 62.5,50 70,59 L 70,77 Z" fill="#cbd5e1"/>
+    <path d="M 76,77 L 76,62 Q 83,54 90,62 L 90,77 Z" fill="#e2e8f0"/>
+    <path d="M 96,77 L 96,62 Q 103,54 110,62 L 110,77 Z" fill="#e2e8f0"/>
+
+    <!-- Main Grand Black Dome -->
+    <path d="M 45,45 C 45,22 80,22 80,45 Z" fill="url(#domeGrad)" stroke="#f59e0b" stroke-width="1.5"/>
+    <!-- Dome Finial / Crescent -->
+    <line x1="62.5" y1="22" x2="62.5" y2="14" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="62.5" cy="13" r="2.5" fill="#f59e0b"/>
+
+    <!-- Small Side Domes -->
+    <path d="M 18,45 C 18,33 38,33 38,45 Z" fill="url(#domeGrad)" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="28" y1="33" x2="28" y2="28" stroke="#f59e0b" stroke-width="1.5"/>
+    <circle cx="28" cy="27" r="1.5" fill="#f59e0b"/>
+
+    <path d="M 87,45 C 87,33 107,33 107,45 Z" fill="url(#domeGrad)" stroke="#f59e0b" stroke-width="1"/>
+    <line x1="97" y1="33" x2="97" y2="28" stroke="#f59e0b" stroke-width="1.5"/>
+    <circle cx="97" cy="27" r="1.5" fill="#f59e0b"/>
+
+    <!-- Minaret (Left) -->
+    <rect x="0" y="25" width="10" height="52" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+    <path d="M -1,25 L 11,25 L 9,21 L 1,21 Z" fill="#475569"/>
+    <rect x="2" y="16" width="6" height="5" fill="#f8fafc"/>
+    <path d="M 1,16 C 1,9 9,9 9,16 Z" fill="url(#domeGrad)"/>
+    <line x1="5" y1="9" x2="5" y2="4" stroke="#f59e0b" stroke-width="1.5"/>
+  </g>
+
+  <!-- Center: Menara Alor Setar (165.5m telecommunication landmark tower) -->
+  <g id="menara-alor-setar" transform="translate(145, 2)">
+    <!-- Tower Spire / Antenna -->
+    <line x1="30" y1="0" x2="30" y2="18" stroke="#ef4444" stroke-width="2"/>
+    <circle cx="30" cy="2" r="1.5" fill="#ffffff"/>
+    
+    <!-- Spire Base Cone -->
+    <polygon points="26,24 34,24 31,18 29,18" fill="#64748b"/>
+
+    <!-- Observation Pod (Saucer structure) -->
+    <ellipse cx="30" cy="27" rx="18" ry="4" fill="#334155"/>
+    <path d="M 12,27 L 16,33 L 44,33 L 48,27 Z" fill="url(#towerGrad)" stroke="#475569" stroke-width="0.8"/>
+    <!-- Revolving Restaurant Windows -->
+    <path d="M 15,29 L 45,29" stroke="#0284c7" stroke-width="2.5" stroke-dasharray="2,1"/>
+    <polygon points="18,33 42,33 35,42 25,42" fill="#475569"/>
+
+    <!-- Tower Shaft (Tapered column) -->
+    <polygon points="26,42 34,42 36,83 24,83" fill="url(#towerGrad)" stroke="#94a3b8" stroke-width="0.8"/>
+    <!-- Shaft vertical grooves -->
+    <line x1="28.5" y1="43" x2="27.5" y2="83" stroke="#64748b" stroke-width="0.8"/>
+    <line x1="31.5" y1="43" x2="32.5" y2="83" stroke="#64748b" stroke-width="0.8"/>
+
+    <!-- Base Pod structure -->
+    <path d="M 16,83 L 44,83 L 42,75 L 18,75 Z" fill="#475569"/>
+  </g>
+
+  <!-- Center-Right: Balai Nobat & Traditional Clocktower -->
+  <g id="balai-nobat" transform="translate(220, 14)">
+    <!-- 3-Tier Traditional Royal Tower -->
+    <!-- Tier 1 Base -->
+    <rect x="15" y="52" width="45" height="19" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+    <path d="M 32,71 L 32,60 Q 37.5,55 43,60 L 43,71 Z" fill="#78350f"/>
+    <!-- Tier 2 -->
+    <rect x="20" y="38" width="35" height="14" fill="#fde68a" stroke="#d97706" stroke-width="1"/>
+    <path d="M 17,38 L 58,38 L 54,34 L 21,34 Z" fill="#b45309"/>
+    <!-- Tier 3 -->
+    <rect x="25" y="24" width="25" height="10" fill="#fef08a" stroke="#d97706" stroke-width="1"/>
+    <path d="M 22,24 L 53,24 L 50,21 L 25,21 Z" fill="#b45309"/>
+    <!-- Tiered Golden Islamic Onion Dome -->
+    <path d="M 27,21 C 27,10 48,10 48,21 Z" fill="url(#goldGrad)" stroke="#78350f" stroke-width="1"/>
+    <line x1="37.5" y1="10" x2="37.5" y2="4" stroke="#78350f" stroke-width="1.5"/>
+    <circle cx="37.5" cy="4" r="1.5" fill="#f59e0b"/>
+  </g>
+
+  <!-- Right: Pekan Rabu / Traditional Shophouses & Palm Trees -->
+  <g id="heritage-arch" transform="translate(290, 22)">
+    <!-- Heritage Building Facade -->
+    <rect x="5" y="32" width="60" height="31" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+    <!-- Roof with Kedah eaves -->
+    <polygon points="0,32 70,32 60,20 10,20" fill="#b91c1c"/>
+    <circle cx="35" cy="26" r="3" fill="#fef08a"/>
+    <!-- Windows -->
+    <rect x="12" y="38" width="10" height="12" fill="#0284c7" opacity="0.6"/>
+    <rect x="28" y="38" width="14" height="25" fill="#334155"/>
+    <rect x="48" y="38" width="10" height="12" fill="#0284c7" opacity="0.6"/>
+
+    <!-- Tropical Palm Silhouette -->
+    <path d="M 0,63 Q 2,45 6,35" stroke="#15803d" stroke-width="2.5" fill="none"/>
+    <path d="M 6,35 Q -3,30 -6,38 M 6,35 Q 2,24 6,18 M 6,35 Q 14,26 18,34 M 6,35 Q 12,38 15,44" stroke="#16a34a" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Ground Line -->
+  <line x1="0" y1="84" x2="360" y2="84" stroke="#94a3b8" stroke-width="1.5"/>
+</svg>
+
